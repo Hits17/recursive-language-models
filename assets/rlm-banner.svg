@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bgGradient)" rx="10"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.3"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.2"/>
+  <circle cx="700" cy="100" r="50" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.3"/>
+  <circle cx="700" cy="100" r="70" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Recursion symbol -->
+  <g transform="translate(80, 70)" filter="url(#glow)">
+    <path d="M 0 30 A 30 30 0 1 1 30 60 L 20 50 M 30 60 L 40 50" 
+          fill="none" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 60 30 A 30 30 0 1 0 30 0 L 40 10 M 30 0 L 20 10" 
+          fill="none" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="200" y="90" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff">
+    Recursive Language
+  </text>
+  <text x="200" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#accentGradient)">
+    Models
+  </text>
+  
+  <!-- Tagline -->
+  <text x="200" y="175" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#888888">
+    Unlimited context through recursive self-interaction
+  </text>
+  
+  <!-- Version badge -->
+  <rect x="680" y="15" width="60" height="24" rx="12" fill="#00d9ff" opacity="0.2"/>
+  <text x="710" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#00d9ff" text-anchor="middle">
+    v0.2.0
+  </text>
+</svg>

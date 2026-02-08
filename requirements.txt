@@ -1,0 +1,28 @@
+# Core RLM Dependencies
+openai>=1.12.0
+requests>=2.31.0
+
+# For Ollama Integration
+ollama>=0.1.7
+
+# Logging and Output Formatting
+rich>=13.7.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Async Support
+aiohttp>=3.9.0
+
+# Additional utilities
+tiktoken>=0.5.0  # Token counting
+termcolor>=2.3.0  # Colored terminal output
+tqdm>=4.66.0  # Progress bars
+
+# For the visualizer and advanced features (optional)
+# uvicorn>=0.27.0
+# fastapi>=0.109.0

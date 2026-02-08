@@ -1,0 +1,70 @@
+[project]
+name = "recursive-language-models"
+version = "0.2.0"
+description = "Recursive Language Models for unlimited context processing"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Hitarth Bhavsar"}
+]
+requires-python = ">=3.10"
+keywords = ["llm", "language-models", "recursion", "ollama", "context", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "openai>=1.12.0",
+    "requests>=2.31.0",
+    "ollama>=0.1.7",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "aiohttp>=3.9.0",
+    "tiktoken>=0.5.0",
+    "tqdm>=4.66.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/recursive-language-models"
+Documentation = "https://github.com/YOUR_USERNAME/recursive-language-models#readme"
+Repository = "https://github.com/YOUR_USERNAME/recursive-language-models"
+Issues = "https://github.com/YOUR_USERNAME/recursive-language-models/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rlm*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311', 'py312']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_ignores = true
