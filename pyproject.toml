@@ -44,10 +44,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/recursive-language-models"
-Documentation = "https://github.com/YOUR_USERNAME/recursive-language-models#readme"
-Repository = "https://github.com/YOUR_USERNAME/recursive-language-models"
-Issues = "https://github.com/YOUR_USERNAME/recursive-language-models/issues"
+Homepage = "https://github.com/Hits17/recursive-language-models"
+Documentation = "https://github.com/Hits17/recursive-language-models#readme"
+Repository = "https://github.com/Hits17/recursive-language-models"
+Issues = "https://github.com/Hits17/recursive-language-models/issues"
 
 [build-system]
 requires = ["setuptools>=61.0"]

@@ -14,7 +14,7 @@ Thank you for your interest in contributing to RLM! This document provides guide
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/recursive-language-models.git
+git clone https://github.com/Hits17/recursive-language-models.git
 cd recursive-language-models
 
 # Create virtual environment

@@ -160,7 +160,7 @@ ollama pull qwen3:latest # Full 8B model
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/recursive-language-models.git
+git clone https://github.com/Hits17/recursive-language-models.git
 cd recursive-language-models
 
 # Run setup script
@@ -488,7 +488,7 @@ MIT License - see [LICENSE](LICENSE)
 </p>
 
 <p align="center">
-  <a href="https://github.com/YOUR_USERNAME/recursive-language-models">⭐ Star this repo</a> •
-  <a href="https://github.com/YOUR_USERNAME/recursive-language-models/issues">🐛 Report Bug</a> •
-  <a href="https://github.com/YOUR_USERNAME/recursive-language-models/issues">💡 Request Feature</a>
+  <a href="https://github.com/Hits17/recursive-language-models">⭐ Star this repo</a> •
+  <a href="https://github.com/Hits17/recursive-language-models/issues">🐛 Report Bug</a> •
+  <a href="https://github.com/Hits17/recursive-language-models/issues">💡 Request Feature</a>
 </p>
